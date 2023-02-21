@@ -125,7 +125,7 @@ checkAmountButton.addEventListener("click", () => {
 
     //Total balance
     const totalBalance = tempAmount - sum;
-    balanceValue .innerText = totalBalance;
+    balanceValue.innerText = totalBalance;
 
     //Create a list
     listCreator(productTitle.value, userAmount.value);
