@@ -6,6 +6,8 @@
 
         <title>Budget Tracker</title>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -45,8 +47,7 @@
                         placeholder="Enter Product Here"
                         />
                     <!--    <p class="hide"
-                            id="product-cost-error"
-                    -->
+                            id="product-cost-error" -->
 
                     <input type="number"
                     id="user-amount"
@@ -56,15 +57,15 @@
             </div>
             <!-- Output-->
             <div class="output-container flex-space">
-                <div id="total-budget">
+                <div>
                     <p>Total Budget</p>
                     <span id="amount">0</span>
                 </div>
-                <div id="expenses">
+                <div>
                     <p>Expenses</p>
-                    <span id="expenditure">0</span>
+                    <span id="expenditure-value">0</span>
                 </div>
-                <div id="total-balance">
+                <div>
                     <p>Balance</p>
                     <span id="balance-amount">0</span>
                 </div>
@@ -73,7 +74,7 @@
         <!-- List-->
         <div class="list">
             <h3>Expense List</h3>
-            <div class="lis-container" id="list"></div>
+            <div class="list-container" id="list"></div>
             </div>
         </div>
         <!-- Script-->
