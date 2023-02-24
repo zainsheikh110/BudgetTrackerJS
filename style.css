@@ -19,21 +19,22 @@
     
     .subcontainer{
         width: 100%;
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3em;
+        display: flex;
+        justify-content: space-between;
     }
     
     .flex{
         display: flex;
         align-items: center;
-        flex-flow: row wrap;
+        flex: 1;
         /* flex-wrap: wrap; */
     }
 
-    .flex > * {
+    /* .flex > * {
         flex: 1;
-    }
+    } */
     
     .flex-space {
         display: flex;
@@ -66,19 +67,23 @@
     .total-amount-container,
     .user-amount-container{
     background-color: #ffffff;
+    width: 100%;
     padding: 1.25em 0.9em;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(30, 0, 100, 0.06);
+    padding: 20px;
     }
+
+
     
     .output-container{
-        background-color: rgb(70, 43, 226);
-        color: #f0e90e;
+        background-color: blueviolet;
+        color: #f0e80e;
+        border: 2px solid blueviolet;
         border-radius: 0.3em;
         box-shadow: 0 0.6em 1.2em rgba(30, 0, 100, 0.06);
         margin: 2em 0;
         padding: 1em;
-    
     }
     
     .output-container p {
@@ -113,9 +118,58 @@
         border-radius: 0.6em;
     }
 
+    .sublist-content{
+        width: 100%;
+        border-left: 0.3em solid #0d1631;
+        margin-bottom: 0.6em;
+        padding: 0.5em 0;
+    }
+
+    .product {
+        font-weight: 500;
+        margin-left: 1.5em;
+        color: #363d55;
+    }
+
+    .amount {
+        color: #414a67;
+        margin-left: 20%;
+    }
+
+    .icons-container {
+        width: 5em;
+        margin: 1.2em;
+        align-items: center;
+    }
+
+    .product-title {
+        margin-bottom: 1em;
+    }
+
     .hide{
         display: none;
     }
     .error {
         color: #ff465a;
+    }
+
+    .edit {
+        margin-left: auto;
+    }
+
+    .edit, .delete {
+        background: transparent;
+        cursor: pointer;
+        margin-right: 1.5em;
+        border: none;
+        color: #587ef4;
+    }
+
+    @media screen and (max-width: 600px) {
+        .wrapper {
+            font-size: 14px;
+        }
+        .subcontainer {
+            grid-template-columns: 1fr;
+        }
     }
